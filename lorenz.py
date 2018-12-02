@@ -57,6 +57,10 @@ class Lorenz(ThreeDScene):
 
 
     def construct(self):
+
+        #rainbow = ["#9400D3","#4B0082","#0000FF","#00FF00","#FFFF00","#FF7F00","#FF0000"]
+        #loren = LorenzAttractor().set_color_by_gradient(rainbow)
+
         loren = LorenzAttractor()
         anim =  ShowCreation(loren, run_time=10)
         self.set_camera_orientation(phi=-TAU/4, theta=None, distance=20.0, gamma=0)
